@@ -30,6 +30,18 @@
   - index.php ~ **_Login Services_ -> _Login Controller_**
   - admin.php ~ **_Admin Services_ -> _Admin Controller_**
 
+### Admin tree class
+
+- **_Class Tree_**
+  - ConnectClass.php ~ **_Connect Class_**
+    - SQLClass.php ~ **_SQL Class_**
+      - FunctionsClass.php ~ **_Functions Class_**
+        - LoginClass.php ~ **_Login Class_**
+- -> **_Complement Class_**
+  - SessionClass.php ~ **_Session Class_**
+- -> **_Trait Class_**
+  - QueryClass.php ~ **_Query Trait Class_**
+
 
 [admin]:<https://github.com/JosafatDeveloper/JuanitoMandados-Git/tree/master/admin>
 [admin/assets]:<https://github.com/JosafatDeveloper/JuanitoMandados-Git/tree/master/admin/assets>
