@@ -7,7 +7,7 @@
 - admin/ Admin
   - assets/ Assets
     - css/ CSS
-      -images/ Images
+      - images/ Images
     - fonts/
     - js/
     - sass/
