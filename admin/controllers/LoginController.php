@@ -17,48 +17,34 @@
  
  // Requiere Class Login
  require_once 'LoginClass.php';
- 
+ require_once 'SessionClass.php';
  // Create Controller Class
  $self = new LOGIN;
  
- /*
- 	// Requiere
- 	if(file_exists('../class/ADMINKIT.php')){
-	 	require_once('../class/ADMINKIT.php');
- 	}else{
-	 	require_once 'class/ADMINKIT.php';
- 	}
- 	
- 	// Controller
-	$controller = new ADMINKIT;
-	// Vars
-	$msn = '';
-	
-	
-	
-	// Function Controller
-	if($controller->VerifySession()){
+ // return MSN
+ $msn = '';
+ 
+ // Get SESSION
+ $SESSION = $self->SESSION;
+ 
+ 	// Function Controller
+	if($SESSION->VerifySession()){
 		$msn .= ', Login Access';
-		header('Location: admin.php');
+		header('Location: admin');
 	}else{
-		if($_SERVER["REQUEST_METHOD"] == "POST") {
-			if(isset($_REQUEST['user_user'])&&isset($_REQUEST['user_pass'])){
-				$user_user = $_REQUEST['user_user'];
-				$user_pass = $_REQUEST['user_pass'];
-				if($controller->verifiqueUser($user_user, $user_pass)){
-					$controller->loginUser($user_user, $user_pass);
-					$msn .= ', Login Correcte';
-					header('Location: admin.php');
-				}else{
-					$msn .= ', No existe el user';
-				}
+		if(isset($_POST['user_user'])&&isset($_POST['user_pass'])){
+			$user_user = $_POST['user_user'];
+			$user_pass = $_POST['user_pass'];
+			if($self->verifiqueUser($user_user, $user_pass)){
+				$self->loginUser($user_user, $user_pass);
+				$msn .= ', Login Correcte';
+				header('Location: admin');
 			}else{
-				$msn .= ', No Post correctos';
+				$msn .= ', No existe el user';
 			}
 		}else{
 			$msn .= ', No Post';
 		}
 	}
-	*/
-
+	
 ?>
