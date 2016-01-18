@@ -15,7 +15,7 @@
       - ie/ ~ **_IE plugin_**
     - sass/
       - libs/ ~ **_Libs_**
-  - controllers/ ~ **_Controllers & Class_**
+  - [controllers/][controllers] ~ **_Controllers & Class_**
     - **_Class Master & Complement_**
         - ConnectClass.php ~ **_Connect Class_**
         - SQLClass.php ~ **_SQL Class_**
@@ -29,3 +29,7 @@
   - images/ ~ **_Images_**
   - index.php ~ **_Login Services_ -> _Login Controller_**
   - admin.php ~ **_Admin Services_ -> _Admin Controller_**
+
+
+
+[controllers]:<https://github.com/JosafatDeveloper/JuanitoMandados-Git/tree/master/admin/controllers>
