@@ -5,8 +5,8 @@
 ### Admin Path
 
 * admin/ Admin
-* * assets/ Assets
-* * * css/
-* * * fonts/
+** assets/ Assets
+*** css/
+*** fonts/
 
 
