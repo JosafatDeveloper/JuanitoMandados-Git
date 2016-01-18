@@ -27,5 +27,5 @@
         - LoginController.php ~ **_Login Controller_**
         - AdminController.php ~ **_Admin Controller_**
   - images/ ~ **_Images_**
-  - index.php ~ **_Login Services_**
-  - admin.php ~ **_Admin Services_**
+  - index.php ~ **_Login Services_ -> _Login Controller_**
+  - admin.php ~ **_Admin Services_ -> _Admin Controller_**
