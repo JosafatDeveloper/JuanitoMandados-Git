@@ -5,7 +5,7 @@
 ### Admin Path
 
 1. admin/ Admin
-  1. assets/ Assets
+  - assets/ Assets
     - css/
     - fonts/
     - js/
