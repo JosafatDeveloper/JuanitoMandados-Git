@@ -1,0 +1,12 @@
+DirectoryIndex index.html index.htm default.htm index.php index.php3 index.phtml index.php5 index.shtml mwindex.phtml
+
+
+Options +Indexes +MultiViews
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
