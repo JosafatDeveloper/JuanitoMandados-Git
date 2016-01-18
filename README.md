@@ -6,9 +6,9 @@
 
 1. admin/ Admin
   1. assets/ Assets
-    1. css/
-    2. fonts/
-    3. js/
-    4. sass/
+    - css/
+    - fonts/
+    - js/
+    - sass/
 
 
