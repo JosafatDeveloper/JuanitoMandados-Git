@@ -4,9 +4,11 @@
 
 ### Admin Path
 
-* admin/ Admin
-** assets/ Assets
-*** css/
-*** fonts/
+1. admin/ Admin
+  1. assets/ Assets
+    1. css/
+    2. fonts/
+    3. js/
+    4. sass/
 
 
